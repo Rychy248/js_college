@@ -1,1 +1,14 @@
 # js_college
+HI THERE! :)
+I AM RYCHY AND THIS 
+IS A REPOSITORY WHERE A DRAW MY LEARNING PATH
+FOR JAVASCRIPT
+
+IT'S SIMILAR TO PYTHON WAY
+
+ENJOY LOOKING THROUGHT MY PRACTICE FILES! :)
+
+contact_me={
+    "email":"jorgeajrha@gmail.com"
+    "telegram":"+502 4209 0991"
+}

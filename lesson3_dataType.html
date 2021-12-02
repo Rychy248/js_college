@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más tipos de Datos js</title>
+</head>
+<body>
+    <head>
+        <h1>
+            Look the console
+        </h1>
+    </head>
+    <script>
+        // tipo string
+        var nombre = "Rychy";
+        console.log(typeof(nombre)+"="+nombre);
+        //tipo int/number
+        var numero = 1000;
+        console.log(typeof(numero)+"="+numero);
+        //tipo float/number
+        var numero = 1000.5;
+        console.log(typeof(numero)+"="+numero);
+        //tipo de dato object
+        var objeto = {
+            nombre:"Hola", //propiedades
+            apellido:"Mundo",
+            telefono:"42090991"
+        }
+        console.log(typeof(objeto)+"="+objeto)
+
+        //tipo boolean
+        var sleep=false
+        console.log(typeof(sleep)+"="+sleep);
+
+        //tipo function
+        function myFunction(){
+
+        };
+        console.log(typeof(myFunction)+"="+myFunction);
+        //Tipo Symbol
+        var simbolo = Symbol("Mi simbolo"); //valor unico de una variable
+        console.log(typeof(simbolo)+"=",simbolo);
+        
+        //Tipo Clase -->las clases son funciones en realidad
+        class Persona{
+            constructor(nombre,apellido){
+                this.nombre=nombre;
+                this.apellido=apellido;
+            }
+        }
+        console.log(typeof(Persona)+"="+Persona);
+
+        //Tipo undefined ---dato no conocido
+        var incognit;
+        console.log(typeof(incognit)+"="+incognit)
+        // podemos asignar undefined directamente
+        var incognit2=undefined;
+        console.log(typeof(incognit2)+"="+incognit2)
+
+        //Tipo null ---dato no asignado, algo así como 0
+        var empty=null; //en realidad es un tipo object
+        console.log(typeof(y)+empty)
+        
+        //Tipo Array -- que son objetos a fin de cuentas
+        var cars=["Lamborgini","Audi","Volvo","BMW",223]
+        console.log(typeof(cars)+"="+cars)
+        
+        //Tipo vacio|Empty
+        var emtpy_var=""
+        console.log(typeof(emtpy_var)+"=",emtpy_var)
+
+    </script>
+</body>
+</html>
