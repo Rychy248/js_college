@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras de control</title>
+</head>
+<body>
+    <header>
+        <h1>Estructuras de control!</h1>
+    </header>
+    <section>
+        <h2>IF ELSE</h2>
+        <p>
+            if (condition1){<br>
+            statement1<br>
+            }else if (condition2){<br>
+            statement2<br>
+            }else if (condition3){<br>
+            statement3<br>
+          ...<br>
+            }else {<br>
+            statementN<br>
+            };
+        </p>
+    </section>
+    <script>
+        let mes1="Junio";
+        let mes2="Noviembre";
+        let medioYear=["Enero","Febrero","Marzo","Abril","Mayo","Junio"]
+        console.log(`typeof(medioYear):${typeof(medioYear)} Value:${medioYear}`)
+        if (Array.isArray(medioYear)){
+            console.log("medioYear Es un array\n");
+        }else{
+            console.log("medioYear Es un array\n");
+        };
+
+        if (mes1 in medioYear){
+            console.log(`${mes1} esta en medio año`);
+        }else{
+            console.log(`${mes1} no esta en medio año`);
+        };
+        if (mes2 in medioYear){
+            console.log(`${mes2} esta en medio año`);
+        }else{
+            console.log(`${mes2} no esta en medio año`);
+        };
+        console.log("\n\n--Mes del año");
+        let mes_comprobar=Number(prompt("Ingrese un numero de mes (1-12)"));
+
+        if(!isNaN(mes_comprobar)){
+            if(mes_comprobar==12 || 2 >= mes_comprobar >= 1){
+                console.log("Es invierno");
+            }else if(3 <= mes_comprobar <= 5){
+                console.log("Es primavera");
+            }else if(6 <= mes_comprobar <= 8){
+                console.log("Es Verano");
+            }else if(9 <= mes_comprobar <= 11){
+                console.log("Es otoño");
+            }else{
+                console.log("No es un numero mes valido")
+            };
+        }else{
+            console.log("Entrada inválida "+mes_comprobar)
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclos while</title>
+</head>
+<body>
+    <header>
+        <h1>Ciclo while and do while</h1>
+    </header>
+    <section>
+        <h2>WHILE</h2>
+        <p>
+            while(condition){<br>
+                //code <br>
+            };<br>
+        </p>
+        <h2>DO WHILE</h2>
+        <p>
+            do {<br>
+            //code<br>
+            } while (condition);<br>
+        </p>
+    </section>
+    <script>
+        let i = 0
+        console.log(`Tabla del 5`);
+        while (i<=10){
+            console.log(`5 * ${i}= ${5*i}`);
+            ++i;
+        };
+
+        i = 0;
+        do{
+            console.log("Esta es la primera ejecución de do{}while();\n y ultima porque dare una condicion false")
+        }while(i>100);
+    </script>
+</body>
+</html>

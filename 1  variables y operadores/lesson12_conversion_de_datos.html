@@ -21,12 +21,13 @@
         console.log("\nTratando de convirtiendo un string total a un Numero");
         let myNumber2="18x";
         console.log(typeof(myNumber2)," ",myNumber2);
+
         r=Number(myNumber2);
         console.log(typeof(r)," ",r," NaN, its mean Not a Number");
-        r=isNaN(r)? "${myNumber2} no es un numero":"${myNumber2} es un numero";
-        console.log('(r=isNaN(r)?"${myNumber2} no es un numero":"${myNumber2} es un numero") ==',r);
-        let interpolando="r:${r}, myNumber2:${myNumber2}";
-        console.log('${interpolando}');
+        r=isNaN(r)? myNumber2+" no es un numero":myNumber+" es un numero";
+        console.log('(r=isNaN(r)?"${'+myNumber2+'} no es un numero":"${'+myNumber2+'} es un numero") ==',r);
+        let interpolando=`r:${r}, myNumber2:${myNumber2} | interpoltaion run with`+"`sign";
+        console.log(`Imprimiendo el mensaje de interpolacion:\n${interpolando}`);
         
     </script>
 </body>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios precedencia de operadores</title>
+</head>
+<body>
+    <header>
+        <h1>Ejercicios precedencias de operadores</h1>
+    </header>
+    <script>
+    let x=5,y=10;
+    let z = ++x + y--;
+    // (x+1)+ (y) next round y--
+    //   6  + 10  next round y--
+    //     16     next round y--
+    console.log("resulatdo de \nlet x=5,y=10;\nlet z = ++x + y--;\n"+z,"\n proximo uso de y:"+y)
+    </script>
+</body>
+</html>
