@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Aritmeticos</title>
+</head>
+<body>
+    <header>
+        <h1>Operadores en javascript</h1>
+        <h2>Look into terminal</h2>
+    </header>
+    <script>
+    /*    adition         +
+        substraction    -
+        multiply        *
+        exponentiation  **
+        division        /
+        Modulus         %
+        increment       ++
+        decrement       --
+    */
+    let var1 = 23;
+    let var2 = 2;
+    console.log("var1 = "+var1+" var2= "+var2);
+    let resultado = var1 + var2;
+    console.log("var1 + var2 = " + resultado);
+    resultado = var1 - var2;
+    console.log("var1 - var2= "+resultado);
+    resultado = var1 * var2;
+    console.log("var1 * var2= "+resultado);
+    resultado= var1 / var2;
+    console.log("var1 / var2= "+resultado);
+    resultado = var1 % var2;
+    console.log("var1 % var2= "+resultado);
+    console.log("var1 ="+var1+" var2 ="+var2);
+    // Para el incremento y decremento en realidad existen dos opciones para cada una
+    resultado = ++var1; // preincrementeo
+    console.log("Preincremento: ++var1 => "+var1+" result = ++var1=>"+resultado);
+    resultado = var2++; // posincremento
+    console.log("Posincremento: var2++ => "+var2+" result = var2++=>"+resultado);
+    resultado = --var1; // predecremento
+    console.log("Predecremento: --var1 => "+var1+" result = --var1=>"+resultado);
+    resultado = var2--; // posdecremento
+    console.log("Posdecremento: var2-- => "+var2+" result = var2--=>"+resultado);
+    console.log("FINALLY: var1: "+var1+" var2: "+var2)
+
+    </script>
+</body>
+</html>

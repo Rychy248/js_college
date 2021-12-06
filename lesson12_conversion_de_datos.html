@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversión de datos</title>
+</head>
+<body>
+    <header>
+        <h1>Conversión de datos</h1>
+    </header>
+    <script>
+        console.log("Convirtiendo un número en string a un Numero");
+        let myNumber="4";
+        console.log(typeof(myNumber)," ",myNumber);
+        myNumber=Number(myNumber);
+        console.log(typeof(myNumber)," ",myNumber);
+        let r = (myNumber>0)?"Es un número positivo":"Es un número negativo";
+        console.log(myNumber," ",r);
+        console.log("\nTratando de convirtiendo un string total a un Numero");
+        let myNumber2="18x";
+        console.log(typeof(myNumber2)," ",myNumber2);
+        r=Number(myNumber2);
+        console.log(typeof(r)," ",r," NaN, its mean Not a Number");
+        r=isNaN(r)? "${myNumber2} no es un numero":"${myNumber2} es un numero";
+        console.log('(r=isNaN(r)?"${myNumber2} no es un numero":"${myNumber2} es un numero") ==',r);
+        let interpolando="r:${r}, myNumber2:${myNumber2}";
+        console.log('${interpolando}');
+        
+    </script>
+</body>
+</html>
