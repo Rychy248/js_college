@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keywords | continue | break | labels</title>
+    <link rel="stylesheet" href="../css.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Keywords | continue | break | labels
+        </h1>
+    </header>
+    <ul>
+        <li>            
+            <h2>Continue;</h2>
+            <pre>   <strong>Pasa a la siguiente iteración</strong><br></pre>
+        </li>
+        <li>
+            <h2>Break;</h2>
+            <pre>   <strong>Rompe un ciclo</strong><br></pre>
+            <p>
+                <pre>
+                    <h3>Usando el break y continue</h3>
+                    for (let i=0; i<1000;i++){
+                        if (false){
+                            <i><strong>continue;</strong> //es mejor usar el continue con un if simple y no en un else</i>
+                        };
+                        if (i>100){
+                            <strong><i>break;</i></strong>
+                        }else if(i%2===0){
+                            console.log("Multiplo de 2:"+i);
+                        }else if(i%3===0){
+                            console.log("Multiplo de 3:"+i);
+                        }else{
+                            <i><strong>continue;</strong>//next iterartion</i>
+                            console.log("no interesa este número y esto nunca se va a imprimir")
+                        };
+                    };
+                </pre>
+            </p>
+        </li>
+        <li>
+            <h2>Labels;</h2>
+            <p>
+                <pre>
+                   <del>console.log("Uso de etiquetas (no recomendado)");</del>
+                    <i><strong><big>inicio:</big></strong> //etiqueta</i>
+                    for (let contador=0; contador<=10; contador++){
+                        if (contador %2 !==0){
+                            <i><strong>continue <big>inicio;</big></strong></i>
+                        };
+                        <i>// rompe una iteracion y va a la etiqueta incio</i>
+                        console.log("contador="+contador);
+                    };
+                    
+                    <i><strong><big>otroInicio:</big></strong></i> for (let contador=0; contador<=10; contador++){
+                        if (contador===5){
+                            <i><strong>break <big>otroInicio;</big></strong></i>
+                           <i>// rompe por completo el ciclo y envia a la etiqueta inicio</i>
+                        };
+                        console.log("contador="+contador);
+                    };
+                </pre>
+            </p>
+        </li>
+    </ol>
+    <h2>
+        SALIDA EN CONSOLA
+    </h2>
+<script>
+    for (let i=0; i<1000;i++){
+        if (false){
+            continue; //es mejor usar el continue con un if simple y no en un else
+        };
+        if (i>100){
+            break;
+        }else if(i%2===0){
+            console.log("Multiplo de 2:"+i);
+        }else if(i%3===0){
+            console.log("Multiplo de 3:"+i);
+        }else{
+            continue; //next iterartion
+            console.log("no interesa este número y esto nunca se va a imprimir");
+        };
+    };
+
+    console.log("Uso de etiquetas (no recomendado)");
+    console.log("continue");
+    inicio: for (let contador=0; contador<=10; contador++){
+        if (contador %2 !==0){
+            continue inicio;
+        };
+        // rompe una iteracion y va a la etiqueta incio
+        console.log("contador="+contador);
+        
+    };
+    
+    console.log("break");
+    otroInicio: for (let contador=0; contador<=10; contador++){
+        if (contador===5){
+            break otroInicio;
+            // rompe por completo el ciclo y envia a la etiqueta inicio
+        };
+        console.log("contador="+contador); 
+    };
+
+</script>
+</body>
+</html>
