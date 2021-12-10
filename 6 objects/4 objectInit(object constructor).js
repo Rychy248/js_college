@@ -17,7 +17,11 @@ let person1={
 
 function printObj(objectName,object){
     for (key of Object.keys(object)){
-        console.log(`${objectName}[${key}] = ${object[key]}`);
+        console.log(
+            typeof(object[key]) === "function"?
+            `${objectName}[${key}]() = ${object[key]()}`:
+            `${objectName}[${key}] = ${object[key]}`
+        );
     };
     console.log("");
 };
@@ -31,16 +35,21 @@ console.log("Objects in js are similar a class in other languagues, that's wy"+
     "\n    this.last_name = last_name;"+
     "\n    this.language = language;"+
     "\n}\n"+
-    "\nWhat's the benefit of this, it's the 'constructor' method\n  "
+    "\nWhat's the benefit of this, it's an object like a class\n"
 );
 
 function person(name, last_name, language){
     this.name = name;
     this.last_name = last_name;
     this.language = language;
-}
+    this.full_name = function (){
+        return `${this.name} ${this.last_name}`;
+    };
+};
 
 let person2 = new person("Karly","Up","en");
 printObj("person2",person2);
 let person3 = new person("Joe","Hernández","es_es");
 printObj("person3",person3);
+
+
