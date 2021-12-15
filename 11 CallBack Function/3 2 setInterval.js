@@ -5,8 +5,7 @@ console.clear();
 // setInterval call the argument function in a loop form
 // setTimeOut call the argument function after a preterdemited time
 function myFunction(i){
-    msg=`\n[${i}]Hi there i'm a synchronous function (Or someone turned me into it!)`;
-    return msg;
+    return `\n[${i}]Hi there i'm a synchronous function (Or someone turned me into it!)`;
 }
 
 let clock = (_msg)=>{
@@ -23,7 +22,9 @@ let j=0,
     msg="";
 
 setInterval(()=>{
-    (j===3)?(j=0, msg+=myFunction(i++)):j++;
+    (j===3)
+        ?(j=0, msg+=myFunction(i++))
+        :j++;
     clock(msg);
 }, 1000);
 
@@ -33,3 +34,4 @@ setInterval(()=>{
 // }else{
 //     j++;
 // };
+
